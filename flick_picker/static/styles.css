@@ -1,0 +1,45 @@
+/* Basic styling for the app */
+body {
+    font-family: Arial, sans-serif;
+    margin: 2em;
+    max-width: 600px;
+  }
+  
+  h1, label {
+    color: #333;
+  }
+  
+  #results ul {
+    margin-top: 1em;
+    padding-left: 1.2em;
+  }
+  
+  #results li {
+    margin: 0.2em 0;
+  }
+  
+  #results p {
+    margin: 0.5em 0;
+  }
+  
+  #movie-input {
+    margin-top: 0.5em;
+  }
+
+  #autocomplete-list {
+    /* Ensure suggestions are on top of other elements */
+    z-index: 1000;
+    
+    /* Add a subtle border if desired */
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    /* The 'position' is handled by inline styles or your HTML class */
+  }
+  
+  /* Optionally tweak how each list-group item looks on hover */
+  #autocomplete-list .list-group-item:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+  }
+  
