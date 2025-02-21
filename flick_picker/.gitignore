@@ -13,3 +13,6 @@ __pycache__/
 # Ignore logs and environment files
 *.log
 .env
+
+# Ignore large files (in any directory)
+**/cosine_sim_cache.pkl
