@@ -2,7 +2,7 @@
 venv/
 
 # Ignore macOS system files
-.DS_Store
+*.DS_Store
 
 # Ignore Python cache and compiled files
 __pycache__/
