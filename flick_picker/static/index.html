@@ -3,47 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>Netflix Recommender</title>
-  <!-- Bootstrap CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-  >
-  <!-- Optional: your custom styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body class="container my-4">
   <h1>Netflix Content-Based Recommender</h1>
 
-  <!-- Input + Autocomplete Suggestions -->
+  <!-- Input + Autocomplete -->
   <div class="mb-3 position-relative">
-    <label for="movie-input" class="form-label">
-      Enter a Movie or Show Title:
-    </label>
-    <input
-      type="text"
-      class="form-control"
-      id="movie-input"
-      placeholder="e.g., 3 Idiots"
-      autocomplete="off"
-    />
-    <!-- Autocomplete list appears here -->
-    <div
-      id="autocomplete-list"
-      class="list-group position-absolute w-100"
-      style="z-index: 1000; max-height: 200px; overflow-y: auto;"
-    ></div>
+    <label for="movie-input" class="form-label">Enter a Movie or Show Title:</label>
+    <input type="text" class="form-control" id="movie-input" placeholder="e.g., 3 Idiots" autocomplete="off" />
+    <div id="autocomplete-list" class="list-group position-absolute w-100" style="z-index: 1000; max-height: 200px; overflow-y: auto;"></div>
   </div>
 
+  <!-- Recommendation Button -->
   <button id="recommend-btn" class="btn btn-primary">Get Recommendations</button>
 
-  <!-- Recommendation results -->
-  <div id="results" class="mt-4"></div>
+  <!-- Recommendation Results with Spinner -->
+  <div id="results" class="mt-4">
+    <div class="spinner-border text-primary" role="status" style="display: none;">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
 
-  <!-- Bootstrap JS (for modals, alerts, etc. if needed) -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  ></script>
-  <!-- Your main JS logic -->
+  <!-- Visualizations -->
+  <div id="visualizations" class="mt-5"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="/static/app.js"></script>
 </body>
 </html>

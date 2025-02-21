@@ -22,7 +22,7 @@ cd flick_picker
 It is **highly recommended** to use a virtual environment to isolate dependencies.
 
 ```bash
-python3 -m venv venv
+python3.12 -m venv venv
 source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate     # Windows (PowerShell)
 ```
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ### **1️⃣ Start the Flask Server**
 Run the following command:
 ```bash
-python recommend_app.py
+python3.12 recommend_app.py
 ```
 
 ### **2️⃣ Access the Web Interface**
@@ -132,12 +132,3 @@ Then, reinstall:
 ```bash
 pip install -r requirements.txt
 ```
-
----
-
-## 📜 License
-This project is licensed under the **MIT License**.
-
----
-
-### 🎉 Happy Coding! 🚀

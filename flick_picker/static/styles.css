@@ -1,45 +1,60 @@
-/* Basic styling for the app */
+/* General styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 2em;
-    max-width: 600px;
-  }
-  
-  h1, label {
-    color: #333;
-  }
-  
-  #results ul {
-    margin-top: 1em;
-    padding-left: 1.2em;
-  }
-  
-  #results li {
-    margin: 0.2em 0;
-  }
-  
-  #results p {
-    margin: 0.5em 0;
-  }
-  
-  #movie-input {
-    margin-top: 0.5em;
-  }
+  font-family: Arial, sans-serif;
+  color: #333;
+}
 
-  #autocomplete-list {
-    /* Ensure suggestions are on top of other elements */
-    z-index: 1000;
-    
-    /* Add a subtle border if desired */
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
-    background-color: #fff;
-    /* The 'position' is handled by inline styles or your HTML class */
+/* Input and Autocomplete */
+#movie-input {
+  margin-top: 0.5em;
+}
+
+#autocomplete-list {
+  z-index: 1000;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#autocomplete-list .list-group-item:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+/* Field Selection Checkboxes */
+.form-check-label {
+  margin-left: 5px;
+}
+
+/* Results */
+#results ul {
+  margin-top: 1em;
+  padding-left: 0;
+}
+
+#results li {
+  margin: 0.5em 0;
+  border-radius: 8px;
+}
+
+#results .spinner-border {
+  margin: 20px auto;
+  display: block;
+}
+
+/* Visualizations */
+#visualizations {
+  margin-top: 2em;
+}
+
+#visualizations canvas {
+  max-height: 300px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #visualizations .col-md-4 {
+    margin-bottom: 1em;
   }
-  
-  /* Optionally tweak how each list-group item looks on hover */
-  #autocomplete-list .list-group-item:hover {
-    background-color: #f8f9fa;
-    cursor: pointer;
-  }
-  
+}

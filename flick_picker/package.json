@@ -1,0 +1,12 @@
+{
+  "name": "flick_picker",
+  "version": "1.0.0",
+  "description": "A Flask-based movie recommendation system that uses **TF-IDF and cosine similarity** to suggest movies based on a given title.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
